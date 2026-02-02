@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Form</title>
+</head>
+<body>
+
+    <table border="1" cellpadding="15" cellspacing="0" width="650" align="center" bordercolor="#CCCCCC">
+        <tr>
+            <td>
+                <form>
+                    <table width="100%" cellpadding="5" cellspacing="0">
+                        <tr>
+                            <td colspan="2">
+                                <font size="4"><b>Basic Info</b></font>
+                                <hr size="1" color="#999999">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="180"><b>Employee ID</b></td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td><b>Last Name</b></td>
+                            <td>Dodsworth</td>
+                        </tr>
+                        <tr>
+                            <td><b>First Name</b></td>
+                            <td><input type="text" value="Anne" size="55"></td>
+                        </tr>
+                        <tr>
+                            <td valign="top"><b>Gender</b></td>
+                            <td>
+                                <input type="radio" name="g"> Male <br>
+                                <input type="radio" name="g"> Female <br>
+                                <input type="radio" name="g"> XXX <br>
+                                <input type="radio" name="g" checked> ZZZ
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>Title</b></td>
+                            <td><input type="text" value="Sales Representative" size="55"></td>
+                        </tr>
+                        <tr>
+                            <td><b>Suffix</b></td>
+                            <td><input type="text" value="Ms." size="55"></td>
+                        </tr>
+                        <tr>
+                            <td><b>BirthDate</b></td>
+                            <td><nobr><input type="text" value="1969-07-02 00:00:00" size="55"> <b>(?)</b></nobr></td>
+                        <tr>
+                            <td><b>HireDate</b></td>
+                            <td><input type="text" value="1994-11-15 00:00:00" size="55"></td>
+                        </tr>
+                        <tr>
+                            <td><b>SSN # (if applicable)</b></td>
+                            <td><input type="text" size="55"></td>
+                        </tr>
+                        <tr>
+                            <td><b>Reports To</b></td>
+                            <td>
+                                <select>
+                                    <option>Buchanan</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <br>
+
+                    <table width="100%" cellpadding="5" cellspacing="0">
+                        <tr>
+                            <td colspan="2">
+                                <font size="4"><b>Contact Info</b></font>
+                                <hr size="1" color="#999999">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="180"><b>Email</b></td>
+                            <td><input type="text" placeholder="name@example.com" size="55"></td>
+                        </tr>
+                        <tr>
+                            <td><b>Address</b></td>
+                            <td><input type="text" value="7 Houndstooth Rd." size="55"></td>
+                        </tr>
+                        <tr>
+                            <td><b>City</b></td>
+                            <td><input type="text" value="London" size="55"></td>
+                        </tr>
+                        <tr>
+                            <td><b>Region</b></td>
+                            <td><input type="text" size="55"></td>
+                        </tr>
+                        <tr>
+                            <td><b>Postal Code</b></td>
+                            <td><input type="text" value="WG2 7LT" size="55"></td>
+                        </tr>
+                        <tr>
+                            <td><b>Country</b></td>
+                            <td>
+                                <select>
+                                    <option>Russian Federation</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>US Home Phone</b></td>
+                            <td><input type="text" value="(234)234-2342" size="55"></td>
+                        </tr>
+                        <tr>
+                            <td><b>Photo</b></td>
+                            <td><input type="text" value="EmpID9.bmp" size="55"></td>
+                        </tr>
+                    </table>
+
+                    <br>
+
+                    <table width="100%" cellpadding="5" cellspacing="0">
+                        <tr>
+                            <td colspan="2">
+                                <font size="4"><b>Optional Info</b></font>
+                                <hr size="1" color="#999999">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="180" valign="middle"><b>Notes</b></td>
+                            <td>
+                                <table border="1" cellspacing="0" cellpadding="0" bordercolor="#CCCCCC" width="100%">
+                                    <tr>
+                                        <td bgcolor="#F0F0F0" style="padding: 2px;">
+                                            <nobr>
+                                                <b>&nbsp;B&nbsp;</b> <i>&nbsp;I&nbsp;</i> <strike>&nbsp;S&nbsp;</strike> <u>&nbsp;U&nbsp;</u> | 
+                                                &equiv; &nbsp; &lsaquo;&equiv; &nbsp; &equiv;&rsaquo; &nbsp; &dbkarow; | 
+                                                &rarrb; &larrb; | 
+                                                X<sub>2</sub> X<sup>2</sup> | 
+                                                <font color="green">&#8634; &#8635;</font> | 
+                                                &#9745; &#9207; | 
+                                                &#128279; &#128443;
+                                            </nobr>
+                                            <br>
+                                            <nobr>
+                                                &#128444; &#128196; &#9000; | 
+                                                <font size="1">H1 H2 H3</font> | 
+                                                <font color="red"><b>&times;</b></font>
+                                            </nobr>
+                                        </td>
+                        </tr>
+        <tr>
+            <td>
+                <textarea rows="8" style="width: 99%; border: none; font-family: sans-serif; padding: 5px;">Anne has a BA degree in English from St. Lawrence College. She is fluent in French and German. ZZZ</textarea>
+            </td>
+        </tr>
+    </table>
+</td>
+                        </tr>
+                        <tr>
+                            <td valign="top"><b>Preferred Shift</b></td>
+                            <td>
+                                <input type="checkbox"> Regular <br>
+                                <input type="checkbox" checked> Gravy Yard
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>Active?</b></td>
+                            <td><input type="checkbox" checked></td>
+                        </tr>
+                        <tr>
+                            <td valign="top"><b>Are you human?</b></td>
+                           <td>
+                                <font face="monospace" size="5">T I D A W O</font><br>
+                                <div align="center" style="width: 400px;"> <small><a href="#">Click to change</a></small>
+                                </div>
+                                <input type="text" size="55">
+                            </td>
+                        </tr>
+                    </table>
+
+                    <br>
+                    <hr size="1" color="#999999">
+
+                    <table width="100%">
+                        <tr>
+                            <td>
+                                <input type="button" value=" ◄ ">
+                                <input type="button" value=" ► ">
+                            </td>
+                            <td align="right">
+                                <button type="submit"><b>💾 Submit</b></button>
+                                <button type="button"><b>X Cancel</b></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>* required</b></td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

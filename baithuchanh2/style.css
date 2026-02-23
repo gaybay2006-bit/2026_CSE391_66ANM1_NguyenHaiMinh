@@ -1,0 +1,108 @@
+/* TODO 1: Reset margin và padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* TODO 2: Type selector cho body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* TODO 3: ID selector cho #main-header */
+#main-header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* TODO 5: Group selector cho h1, h2, h3 */
+h1, h2, h3 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* TODO 4: Class selector cho .nav-link */
+.nav-link {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+/* TODO 6: Descendant selector cho nav a */
+nav {
+    text-align: center;
+    padding: 15px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+nav a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* TODO 7: Pseudo-class selector cho a:hover */
+a:hover {
+    color: #ff6600;
+    background-color: #eee;
+}
+
+/* Căn chỉnh nội dung chính cho đẹp */
+main {
+    padding: 40px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #888;
+}
+
+/* Bước 1: Reset box-sizing đã có ở phần trước, 
+   đảm bảo toàn trang đã có thuộc tính này */
+* {
+    box-sizing: border-box;
+}
+
+/* Bước 2: Style cho .posts container */
+.posts {
+    max-width: 1000px; /* Giới hạn độ rộng vùng chứa card */
+    margin: 30px auto;  /* Căn giữa container và tạo khoảng cách trên dưới */
+    text-align: center; /* Để các card con (inline-block) căn giữa */
+}
+
+/* Bước 3: Style cho .card */
+.card {
+    width: calc(30% - 20px); /* Tính toán độ rộng để trừ đi margin */
+    display: inline-block;   /* Cho phép các card nằm cùng một hàng */
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    background: white;
+    border-radius: 8px;
+    vertical-align: top;     /* Giúp các card thẳng hàng phía trên nếu nội dung dài ngắn khác nhau */
+    text-align: left;        /* Chữ trong card căn lề trái cho dễ đọc */
+}
+
+/* Bước 4: Style cho .btn (Nút bấm) */
+.btn {
+    display: inline-block;
+    margin-top: 15px;        /* Tạo khoảng cách với đoạn văn trên */
+    padding: 8px 16px;
+    background: #007bff;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s; /* Hiệu ứng chuyển màu mượt mà */
+}
+
+/* Hiệu ứng Hover cho nút */
+.btn:hover {
+    background: #0056b3;
+    color: white; /* Đảm bảo chữ vẫn trắng khi hover */
+}

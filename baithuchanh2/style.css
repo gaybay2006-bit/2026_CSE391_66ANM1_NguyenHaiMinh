@@ -1,0 +1,211 @@
+/* TODO 1: Reset margin và padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* TODO 2: Type selector cho body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* TODO 3: ID selector cho #main-header */
+#main-header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* TODO 5: Group selector cho h1, h2, h3 */
+h1, h2, h3 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* TODO 4: Class selector cho .nav-link */
+.nav-link {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+/* TODO 6: Descendant selector cho nav a */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Tạo khoảng cách giữa các link mà không cần dùng margin tay */
+    background: #f8f9fa;
+    padding: 15px;
+}
+
+nav a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* TODO 7: Pseudo-class selector cho a:hover */
+a:hover {
+    color: #ff6600;
+    background-color: #eee;
+}
+
+/* Căn chỉnh nội dung chính cho đẹp */
+main {
+    padding: 40px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #888;
+}
+
+/* Bước 1: Reset box-sizing đã có ở phần trước, 
+   đảm bảo toàn trang đã có thuộc tính này */
+* {
+    box-sizing: border-box;
+}
+
+/* Bước 2: Style cho .posts container */
+.posts {
+    display: flex;
+    flex-wrap: wrap; /* Cho phép các card tự động xuống hàng khi không đủ chỗ */
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+/* Bước 3: Style cho .card */
+.card {
+   /* flex: grow | shrink | basis */
+    flex: 0  calc(33.33% - 20px); 
+    background: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    /* Không cần dùng inline-block hay margin-right nữa vì đã có gap ở cha */
+}
+
+/* Bước 4: Style cho .btn (Nút bấm) */
+.btn {
+    display: inline-block;
+    margin-top: 15px;        /* Tạo khoảng cách với đoạn văn trên */
+    padding: 8px 16px;
+    background: #007bff;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s; /* Hiệu ứng chuyển màu mượt mà */
+}
+
+/* Hiệu ứng Hover cho nút */
+.btn:hover {
+    background: #0056b3;
+    color: white; /* Đảm bảo chữ vẫn trắng khi hover */
+}
+
+/* Responsive: Khi màn hình < 768px, card xếp thành 1 cột */
+@media (max-width: 768px) {
+    .posts {
+        flex-direction: column; /* Chuyển trục chính sang chiều dọc */
+        align-items: center;    /* Căn giữa các card khi ở dạng cột */
+    }
+    
+    .card {
+        flex: 1 1 100%; /* Chiếm hầu hết chiều rộng màn hình điện thoại */
+        max-width: 500px;
+    }
+}
+.gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* ← 3 cột bằng nhau*/
+        gap: 16px;
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 0 20px;
+}
+
+.item {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+        font-size: 2rem;
+        border-radius: 8px;
+}
+
+.item:hover {
+    transform: scale(1.05); /* Thêm hiệu ứng phóng to nhẹ khi hover cho đẹp */
+}
+
+@media (max-width: 900px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Khi màn hình nhỏ hơn 600px (Mobile): Nhảy về 1 cột dọc duy nhất */
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* --- BÀI TẬP 4: STICKY HEADER & FIXED BUTTON --- */
+
+/* Header sticky */
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 100; /* Đảm bảo header luôn nằm trên các nội dung khác khi cuộn */
+    background-color: #333; /* Giữ màu nền để không bị lộ nội dung bên dưới khi cuộn */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Hiệu ứng đổ bóng nổi bật */
+}
+
+/* Nút Scroll to Top */
+.scroll-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: #007bff;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 24px;
+    transition: all 0.3s ease;
+    z-index: 99;
+}
+
+.scroll-top:hover {
+    background: #0056b3;
+    transform: scale(1.1); /* Phóng to nhẹ khi hover */
+}
+
+/* Cải tiến Responsive cho Nav */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+    
+    .scroll-top {
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+    }
+}

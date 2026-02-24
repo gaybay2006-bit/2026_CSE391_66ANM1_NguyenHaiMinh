@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f9f9f9;
+    font-family: 'Courier New', Courier, monospace; /* Font chữ dạng máy đánh chữ */
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.container {
+    background-color: #fff;
+    width: 90%;
+    max-width: 1000px;
+    padding: 80px 40px;
+    /* Hai đường kẻ xanh hai bên */
+    border-top: 4px solid #aaddf8;
+    border-left: 4px solid #aaddf8;
+    border-right: 4px solid #aaddf8;
+    border-bottom: 4px solid #aaddf8;
+    position: relative;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.header h1 {
+    font-size: 28px;
+    font-weight: normal;
+    color: #333;
+    line-height: 1.4;
+}
+
+/* Chia layout bằng Flexbox */
+.main-content {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+/* Style cho thẻ Card bên trái */
+.card {
+    flex: 1;
+    background: #fff;
+    padding: 40px 30px;
+    /* Hiệu ứng đổ bóng mềm mại */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.card p {
+    font-size: 13px;
+    color: #888;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.author .name {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
+
+.author .title {
+    font-size: 12px;
+    color: #4a90e2; /* Màu xanh cho chức danh */
+}
+
+/* Style cho cột văn bản bên phải */
+.text-content {
+    flex: 1.2;
+}
+
+.text-content p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}

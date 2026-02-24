@@ -1,0 +1,138 @@
+/* Thiết lập chung */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #11618fd9; /* Màu nền tím đậm bao quanh */
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200') no-repeat center/cover;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 2px solid #ff00ff; /* Viền hồng như trong ảnh gợi ý */
+}
+
+.logo {
+    color: #e0f08a;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #e0f08a;
+    font-size: 14px;
+    border: 1px solid #e0f08a;
+    padding: 2px 5px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200') no-repeat center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px 50px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.hero-content h1 { font-size: 24px; margin-bottom: 5px; }
+.hero-content p { font-size: 12px; margin-bottom: 20px; letter-spacing: 1px; }
+
+.btn-discover {
+    background-color: #ffff00;
+    color: black;
+    text-decoration: none;
+    padding: 8px 15px;
+    font-weight: bold;
+    font-size: 13px;
+    border-radius: 4px;
+}
+
+/* Highlights Section */
+.highlights {
+    background-color: #e0f7f7;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.highlights h2 {
+    color: #4a7c7c;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.card {
+    flex: 1;
+    max-width: 350px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #4a7c7c;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card p span {
+    color: #26b19a;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #ff00ff;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 25px;
+    margin: 0 15px;
+    text-decoration: none;
+}

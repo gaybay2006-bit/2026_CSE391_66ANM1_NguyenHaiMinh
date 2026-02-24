@@ -1,0 +1,89 @@
+/* Thiết lập cơ bản */
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+/* Khung viền ngoài cùng */
+.container {
+    width: 100%;
+    max-width: 900px;
+    border: 1px solid #333;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.form-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 25px;
+}
+
+/* Flexbox cho từng hàng */
+.form-row {
+    display: flex;
+    gap: 20px; /* Khoảng cách giữa các ô */
+    margin-bottom: 15px;
+}
+
+/* Các ô input và textarea */
+input[type="text"], 
+input[type="email"], 
+textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    outline: none;
+    color: #666;
+}
+
+/* Ô input chiếm 50% ở hàng đầu */
+.flex-item {
+    flex: 1; 
+}
+
+/* Ô input chiếm 100% */
+.full-width {
+    width: 100%;
+}
+
+textarea {
+    height: 250px;
+    resize: none; /* Khóa không cho kéo giãn */
+}
+
+/* Hàng cuối cùng: Nút và Ghi chú */
+.form-footer {
+    display: flex;
+    justify-content: space-between; /* Đẩy 2 phần tử về 2 phía */
+    align-items: center;
+    margin-top: 10px;
+}
+
+.btn-send {
+    background-color: #7bcdff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-send:hover {
+    background-color: #5fb8f0;
+}
+
+.form-note {
+    color: #888;
+    font-size: 14px;
+    font-style: italic;
+}
